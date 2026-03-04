@@ -1,0 +1,51 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.card {
+    width:500px;
+    background-color: white;
+    border-radius: 20px;   
+    padding: 30px; 
+
+}
+
+.outer {
+    height:30px;
+    width:100%;
+    border-radius:50px;
+    background-color: rgb(190, 192, 189);
+
+}
+
+.inner {
+    height:100%;
+    width:0%;
+    background-color: rgb(26, 75, 26);
+    border-radius:50px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.bottom h2{
+    font-size: 50px;
+}
+
+.bottom button {
+    padding:12px 25px; 
+    background-color: rgb(26, 75, 26);
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+    border:0;
+
+}
