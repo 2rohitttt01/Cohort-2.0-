@@ -1,25 +1,13 @@
+var img =document.querySelector('img');
+var love = document.querySelector('#love');
 
-// document.createElement("button");
-var grow = 0;
-var btn = document.querySelector('button');
-var h2 = document.querySelector('h2');
-var inner = document.querySelector('.inner');
+img.addEventListener('dblclick',()=>{
+    love.style.opacity =1;
+    love.style.transform = 'translate(-50%,-50%) scale(1.5) rotate(0deg)';
 
-btn.addEventListener('click',function(){
-    btn.style.pointerEvents = 'none';
-
-    var num = 50+Math.floor(Math.random()*50);
-    console.log(num);
-        
-   var int= setInterval(function(){
-        grow++;
-        h2.innerHTML = grow +'%'
-        inner.style.width =grow +'%'
-    },num);
-    setTimeout(function(){
-        clearInterval(int);
-        btn.innerHTML = 'Downloaded';
-        btn.style.opacity = 0.3;
-    },num*100 );
+    setTimeout(()=>{
+        love.style.opacity =0;
+        love.style.transform = 'translate(-50%,-300%) scale(1) rotate(0deg)';
+    },1000)
 })
-
+ 
