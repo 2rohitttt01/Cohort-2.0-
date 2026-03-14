@@ -1,13 +1,14 @@
 var img =document.querySelector('img');
-var love = document.querySelector('#love');
+var h2 =document.querySelector('h2 span');
+var bd =document.body;
 
-img.addEventListener('dblclick',()=>{
-    love.style.opacity =1;
-    love.style.transform = 'translate(-50%,-50%) scale(1.5) rotate(0deg)';
+img.addEventListener('mouseenter',function(){
+    h2.innerHTML = "dorr hoja BSDK";
+    bd.style.backgroundColor='red';
 
-    setTimeout(()=>{
-        love.style.opacity =0;
-        love.style.transform = 'translate(-50%,-300%) scale(1) rotate(0deg)';
-    },1000)
 })
- 
+
+img.addEventListener('mouseleave',function(){
+    h2.innerHTML="good! door he rahh";
+    bd.style.backgroundColor='black';
+})
